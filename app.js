@@ -28,8 +28,8 @@ if(this !== e.target){
 // y = y + e.target.offset
 // }
 console.log(e)
-const xWalk = Math.round((x / width * walk) - (walk /2))
-const yWalk = Math.round((y / height * walk) - (walk /2))
+const xWalk = Math.round((x / width * walk) - (walk /2)) * 3
+const yWalk = Math.round((y / height * walk) - (walk /2)) * 3
 text.style.textShadow = `
 ${xWalk}px ${yWalk}px 0 rgba(255,0,225,0.7),
 ${xWalk * -1}px ${yWalk * -1}px 0 rgba(0,255,225,0.7),
